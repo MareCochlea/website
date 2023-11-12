@@ -1,0 +1,86 @@
+@font-face {
+  font-family: coolvetica;
+  src: url(./assets/fonts/coolvetica/coolvetica\ compressed\ hv.otf);
+}
+
+@font-face {
+  font-family: outfit;
+  src: url(./assets/fonts/Outfit/static/Outfit-Medium.ttf);
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+div.intro {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #9df14d;
+  text-align: center;
+  font-size: 24px;
+}
+
+div.nav {
+  transition: top 0.3s;
+  margin: 0;
+  padding-top: 2px;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  height: 32px;
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+}
+
+.lang {
+  position: absolute;
+  margin: 0;
+  left: 14px;
+  top: 14px;
+  height: 42px;
+  width: 42px;
+}
+
+.bar {
+  position: absolute;
+  margin: 0;
+  right: 20px;
+  top: 20px;
+  height: 32px;
+  width: 32px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: outfit;
+  margin: 0;
+}
