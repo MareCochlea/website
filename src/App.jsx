@@ -26,7 +26,6 @@ function Layout() {
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/nothing-here">Nothing Here</Link>
       </nav>
-
       <hr />
       <Outlet />
     </div>
