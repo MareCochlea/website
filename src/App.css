@@ -8,6 +8,10 @@
   src: url(./assets/fonts/Outfit/static/Outfit-Medium.ttf);
 }
 
+h2 {
+  color: black;
+}
+
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;

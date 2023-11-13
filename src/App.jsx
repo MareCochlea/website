@@ -1,15 +1,16 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
+import logo from "./assets/logo.png"
 import "./App.css"
 
 export default function App() {
   return (
     <div className="intro">
-      <h1>Basic Example</h1>
+      <img className="logo" src={logo}/>
       <Routes>
-        <Route className="nav" path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="website/home" element={<Home />} />
+          <Route path="website/about" element={<About />} />
+          <Route path="website/projects" element={<Projects />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -21,12 +22,11 @@ function Layout() {
   return (
     <div className="nav">
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/nothing-here">Nothing Here</Link>
+        <Link to="website/home">Home</Link>
+        <Link to="website/about">About</Link>
+        <Link to="website/projects">Projects</Link>
+        <Link to="website/nothing-here">Nothing Here</Link>
       </nav>
-      <hr />
       <Outlet />
     </div>
   );
@@ -48,7 +48,7 @@ function About() {
   );
 }
 
-function Dashboard() {
+function Projects() {
   return (
     <div>
       <h2>Dashboard</h2>
@@ -59,7 +59,7 @@ function Dashboard() {
 function NoMatch() {
   return (
     <div>
-      <h2>Nothing to see here!</h2>
+      <h2>Nothing to see here.</h2>
       <p>
         <Link to="/">Go to the home page</Link>
       </p>
